@@ -82,7 +82,7 @@ def scan(
     deny_flag: bool,
     cli_deny_servers: tuple[str, ...],
     cli_deny_tools: tuple[str, ...],
-)-> None:
+) -> None:
     """Scan an MCP server for security risks.
 
     PATH can be a directory containing mcp.json or the config file itself.
