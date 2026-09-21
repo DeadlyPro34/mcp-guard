@@ -153,7 +153,7 @@ class WriteWithoutReadRule(SecurityRule):
         capability: MCPCapability,
         manifest: MCPManifest,
     ) -> list[RiskFinding]:
-        findings = []
+        findings: list[RiskFinding] = []
         if not capability.is_write:
             return findings
 
@@ -211,7 +211,7 @@ class DestructiveWithoutConfirmationRule(SecurityRule):
         capability: MCPCapability,
         manifest: MCPManifest,
     ) -> list[RiskFinding]:
-        findings = []
+        findings: list[RiskFinding] = []
         if not capability.is_destructive:
             return findings
 
